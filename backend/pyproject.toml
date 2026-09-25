@@ -23,7 +23,6 @@ dependencies = [
     "psycopg2-binary==2.9.12",
     "pydantic==2.13.5",
     "pydantic-core==2.46.5",
-    "python-benedict>=0.34.1",
     "python-dotenv==1.2.3",
     "pyyaml==6.0.3",
     "sqlalchemy==2.0.52",
@@ -45,11 +44,3 @@ backend = "backend:main"
 [build-system]
 requires = ["uv_build>=0.12.15,<0.13.0"]
 build-backend = "uv_build"
-
-[dependency-groups]
-dev = [
-    "taskipy>=1.14.1",
-]
-
-[tool.taskipy.tasks]
-dev = "py -m main.py"
